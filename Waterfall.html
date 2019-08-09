@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>The Waterfall Model</title>
+    <meta charset="utf-8">
+    <meta name="description" content="iiT - Introduction into Testing - Voice Controlled Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Michael Caunce">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FAB700">
+    <link rel="stylesheet" href="stylesheet.css">
+     
+    <!-- If statement linking IE 6-9 to a seperate CSS file stripping back all CSS -->  
+      
+    <!-- [if IE]>
+      <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+      
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="speech-commands.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header>
+      <a class="skip-main" href="#Banner">Skip to main content</a>
+      <a id="top"></a>
+      <!-- Start of Navigation -->
+      <nav class="nav-grid">
+        <a href="index.html">
+        <img src="Images/Logo.jpg" alt="iiT logo, click to return to the homepage " title="Return Home"></a>
+        <input type="checkbox" id="Nav-Hide">
+        <label for="Nav-Hide">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Agile.html">Agile</a>
+          <a href="Waterfall.html">Waterfall</a>
+          <a href="Black-Box.html">Black-Box</a>
+          <a href="White-Box.html">White-Box</a>
+          <a href="Manual.html">Manual</a>
+          <a href="Automated.html">Automated</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Start of Banner -->
+    <section id="Banner" class= "grid">
+      <div class="Banner-Content">
+          <h1>The Waterfall Model</h1>
+          <p>Unlike Agile, the Waterfall model is sequential with each phase representing a distinct stage of software development. Generally, each phase finishes before the next phase can commence.
+            Importantly, the testing phase in Waterfall only starts after the implementation of the system is done.</p>
+      </div>
+    </section>
+    <!-- Start of Introduction -->
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="top-grid">
+          <div class="Box">
+            <h2>Introduction</h2>
+            <p>The Waterfall model is a sequential process where the development is divided into phases. Each phase must be completed before the next phase can begin, without the possibility for overlapping phases.
+              In the Waterfall model, the result of one phase impacts the next, meaning that the next phase can only commence when the previous phase is complete. The name Waterfall derives from the design of the model, a
+              steady flowing process resembling a waterfall.</p>
+              <p>The Waterfall model is a linear approach, in that it moves from one phase to another without revisiting previous phases. Phases cannot be veered from either, so think of the Waterfall model as building a house.
+                You start at the bottom by laying the foundations and work your way through each phase until finally, you are putting on the roof. Importantly, you cannot decide to change the foundation of the house (project) when the
+                roof is being put on. Returning to a previous phase would require an overhaul of the entire house (project), not just the foundations.</p>
+          </div>
+          <div class="Box">
+            <h2>Sequential Phases</h2>
+            <ul>
+              <li><b>Requirements:</b> Detailed requirements of the potential product are gathered from the client.</li>
+              <li><b>System Design:</b> The requirements obtained in phase 1 are studied allowing for decisions to be made relating to specifying hardware choices, programming languages, database design and other technical details.</li>
+              <li><b>Implementation:</b> The product is built using the input from the previous phase.</li>
+              <li><b>Testing:</b> The product is tested to verify the requirements and specification of the client is being met.</li>
+              <li><b>Deployment of System:</b> The product is deployed into the market.</li>
+              <li><b>Maintenance:</b> Modifications can now be made to the product. Any modifications arise due to requirement changes or defects uncovered.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Pros vs Cons -->
+    <article class="TestingTypes">
+      <h2>Pros vs Cons</h2>
+      <div class="TestingTypes-Container TestingTypes-grid">
+        <div>
+          <img src="Images/Icons/Pros.png" alt="Pros icon">
+          <h3>Pros</h3>
+          <ul>
+            <li>Each phase must be completed before moving onto the next </li>
+            <li>Suited for small projects with distinct requirements</li>
+            <li>Intricate documentation is required at every phase</li>
+            <li>Once started, there is minimal client interaction and the project is dependent on the project team</li>
+            <li>Changes are made during the development process</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Images/Icons/Cons.png" alt="Cons icon">
+          <h3>Cons</h3>
+          <ul>
+            <li>Defects can only be fixed during the phase</li>
+            <li>Not suited for projects where requirements are likely to change</li>
+            <li>Testing documentation occupies a lot of time</li>
+            <li>Client feedback is not ongoing</li>
+            <li>Problems can arise from changes made in the completed product</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+	<!-- Start of Agile vs Waterfall -->
+    <article class="TestingTypes">
+      <h2>Agile vs Waterfall</h2>
+      <div class="TestingTypes-Container TestingTypes-grid">
+        <div>
+          <img src="Images/Icons/Agile-icon.png" alt="Agile Methodology icon" title="Agile Methodology">
+          <h3>Agile</h3>
+          <ul>
+            <li>Agile testing is generally unstructured</li>
+            <li>Suited for small projects</li>
+            <li>Defects can be fixed during the project lifecycle</li>
+            <li>Less documentation</li>
+            <li>Each iteration has a dedicated testing phase. Regression tests can be run based on the integration of new functions</li>
+            <li>Testers and developers work closely together</li>
+            <li>User acceptance is undertaken after each sprint</li>
+            <li>Testers and developers communicate plan and analyse requirements</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Images/Icons/Waterfall-icon.png" alt="Waterfall Model icon" title="The Waterfall Model">
+          <h3>Waterfall</h3>
+          <ul>
+            <li>The testing process is more structured</li>
+            <li>Waterfall is suitable for a variety of projects</li>
+            <li>Testing only occurs at the end of development, the process repeats for any changes</li>
+            <li>Requires intricate documentation</li>
+            <li>Testing only begins after the development phase</li>
+            <li>Testers and developers work separately</li>
+            <li>User acceptance can only commence at the end of the project</li>
+            <li>Minimal communication between testers and developers. Developers are not involved in planning or requirement analysis</li>
+          </ul>
+        </div>
+      </div>
+      <div class="topReturn">
+        <a href="#top">Return to the top</a> 
+      </div>
+    </article>
+    <!-- Start of Footer -->
+    <footer>
+      <p>Michael Caunce &copy; 2019</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+    <a href="Sitemap.html">User Sitemap</a>
+  </body>
+</html>

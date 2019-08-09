@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://www.michaelcauncecis3140.co.uk/sitemap.xml

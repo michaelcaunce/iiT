@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Introduction into Software Testing</title>
+    <meta charset="utf-8">
+    <meta name="description" content="iiT - Introduction into Testing - Voice Controlled Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Michael Caunce">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FAB700">
+    <link rel="stylesheet" href="stylesheet.css">
+      
+    <!-- If statement linking IE 6-9 to a seperate CSS file stripping back all CSS -->  
+    
+    <!-- [if IE]>
+      <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+      
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="speech-commands.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header>
+      <a class="skip-main" href="#Banner">Skip to main content</a>
+      <a id="top"></a>
+      <!-- Start of Navigation -->
+      <nav class="nav-grid">
+        <a href="index.html">
+          <img src="Images/Logo.jpg" alt="iiT logo, click to return to the homepage " title="Return Home">
+        </a>
+        <!-- Start of mobile navigation using checkbox -->
+        <input type="checkbox" id="Nav-Hide">
+        <label for="Nav-Hide">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <!-- End of mobile nav -->
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Agile.html">Agile</a>
+          <a href="Waterfall.html">Waterfall</a>
+          <a href="Black-Box.html">Black-Box</a>
+          <a href="White-Box.html">White-Box</a>
+          <a href="Manual.html">Manual</a>
+          <a href="Automated.html">Automated</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Start of Banner -->
+    <section id="Banner" class="grid">
+      <div class="Banner-Content">
+          <h1>Introduction into Software Testing</h1>
+          <p>&ldquo;Most people think we test just to find defects in software, which is not incorrect but there is more to it. We test to give confidence in a product,
+            if a product doesn’t go through testing how do we know that when it goes live it will actually work?&rdquo;</p>
+      </div>
+    </section>
+    <!-- Start of Introduction and the Importance of Testing -->
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="top-grid">
+          <div class="Box">
+            <h2>Introduction</h2>
+            <p>Software testing, and testing in general is a grey area, with little to no exposure across courses.
+              On your pathway, you will cover a limited range of software testing, with the focus being more towards usability testing.
+              However, the importance of testing will be stressed by tutors, but with the volume of information relating to Web Design & Development,
+              and the limited number of teaching hours, it is impossible to cover everything. </p>
+            <p>iiT has been created to bridge that gap. An informative website to provide you with an introduction into testing, a foundation of knowledge
+              for you to build upon. You will be introduced to a small percentage of the basics of testing, such as the importance of testing, testing methodologies,
+              testing approaches, and a selection of testing types. It is beyond the scope of this website to present every aspect of testing; therefore, the aim is to
+              present the fundamentals of the more well-known industry testing techniques. </p>
+          </div>
+          <div class="Box">
+            <h2>Importance of Testing</h2>
+            <p>As software becomes more intricate, the challenge to build bug-free programmes is becoming more and more challenging.
+              Thus, the importance of testing is paramount. If you do not test, how do you know it works? There is a common misconception that the sole
+              purpose of testing is to find defects, though the theory is not incorrect, there is more to it, especially in the industry. While finding defects
+              is one purpose of software testing and most likely what is relevant to yourself, it is essential to understand that defects or bugs are not the sole
+              purposes of testing. </p>
+            <p>Testing ensures that different requirements and specifications are met, and provides validation of the product against the user needs.
+              Testing contributes to the improvements in the product and can reduce costs and save companies money. Testing can significantly improve a companies
+              reputation, translating into greater revenue opportunities. Testing can keep systems safe and safeguard companies from legal liabilities. Ultimately,
+              testing gives confidence to a product, if a product does not go through testing how do we know that when it goes live, it will work?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Banner-Mid" class="grid">
+      <div class="Banner-Content">
+        <div class="Banner-Box-Mid">
+          <h1>IT failure costs British Airways £80m.</h1>
+          <p>In 2017, British Airways suffered an IT system meltdown forcing the cancellation of over 700 flights, 28% of scheduled flights over three days.
+            The impact left 75,000 passengers stranded at the start of the May half-term holiday costing the airline £80m.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Agile vs Waterfall -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Testing Methodologies</h2>
+        <div class="TM-Content">
+          <p>Testing methodologies are also referred to as Models in SDLC, Software Development Life Cycle, with the best suited methodology chosen on what suits the SDLC or STLC.
+            Agile and Waterfall are perhaps the most well-known development methodologies, and since software testing is an integral part of any development methodology,
+            Agile and Waterfall are often referred to as Testing Methodologies. There are several other testing methodologies available, however, we will go into more depth on the two you are most
+            likely familiar with, Agile and Waterfall. Waterfall is known as the ‘old’ way of delivering software with Agile seen as ‘more up and coming’. If the SDLC or STLC is suited,
+            Agile is the preferred choice.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Agile vs Waterfall Section -->
+    <article class="Articles articles-grid Article-Odd">
+      <img src="Images/Agile.jpg" alt="Graphical representation of the Agile methodology">
+      <section>
+        <h3>Agile Methodology</h3>
+        <p>Agile is an iterative, team-based approach emphasising rapid delivery of the entire functional components of a product. Agile testing differs from the Waterfall method as testing can begin
+          at the start of the life cycle, with integration between development and testing. Ultimately, Agile testing is not sequential, but continuous. </p>
+          <a href="Agile.html" class="Article-Link">Read More</a>
+      </section>
+    </article>
+    <article class="Articles articles-grid Article-Even">
+      <img src="Images/waterfall.jpg" alt="Graphical representation of the Waterfall methodology">
+      <section>
+        <h3>Waterfall Model</h3>
+        <p>Unlike Agile, the Waterfall model is sequential with each phase representing a distinct stage of software development. Generally, each phase finishes before the next phase can commence.
+          Importantly, the testing phase in Waterfall only starts after the implementation of the system is done.</p>
+        <a href="Waterfall.html" class="Article-Link">Read More</a>
+      </section>
+    </article>
+    <!-- Start of Mid Banner -->
+    <section id="Banner-Mid-2" class="grid">
+      <div class="Banner-Content">
+        <div class="Banner-Box-Mid">
+          <h1>Starbucks Forced To Give Free Drinks.</h1>
+          <p>In 2015, Starbucks experienced widespread payment system failure across the US and Canada, forcing the company to hand out free drinks and close stores.
+            The glitch lasted for several hours and cost the company millions of dollars.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Black-box vs White-box Testing -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Black-Box Testing Vs White-Box Testing</h2>
+        <div class="TM-Content">
+          <p>Black-box testing and White-box testing are two testing techniques with distinct differences. Black-box testing focuses on the behaviour of the software, testing the way the system is
+            supposed to work. Black-box testing can further be broken down in two main subtypes, functional and non-functional. White-box testing is a technique which focuses on the internal functioning
+            of the product, where test cases need to be designed to exercise as many paths through the code as possible. White-box is also known as clear box testing, glass box testing, transparent box testing,
+            and structural testing</p>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Black-box and White-box Articles -->
+    <article class="Articles articles-grid Article-Odd">
+      <img src="Images/BlackBox.svg" alt="Graphical representation of the Black-box testing">
+      <section>
+        <h3>Black-Box Testing</h3>
+        <p>The term ‘Black-box’ derives from the software tester being unaware of the internal structure of the product, thus seeing it as a ‘Black-box’. In Black-box testing, the emphasis is on input and output of the product,
+          with little to no internal knowledge. Black box testing is best-suited to completed programs.</p>
+          <a href="Black-Box.html" class="Article-Link">Read More</a>
+      </section>
+    </article>
+    <article class="Articles articles-grid Article-Even">
+      <img src="Images/WhiteBox.svg" alt="Graphical representation of the White-box testing">
+      <section>
+        <a href="#"><h3>White-Box Testing</h3>
+        <p>White-box testing aims to find possible errors in the code of the product to see how it performs. Thus, testing can only instigate when the product is ready. Due to the necessity of technical knowledge, white-box testing is undertaken
+          by software developers or testing experts. </p></a>
+        <a href="White-Box.html" class="Article-Link">Read More</a>
+      </section>
+    </article>
+    <!-- Start of Mid Banner -->
+    <section id="Banner-Mid-3" class="grid">
+      <div class="Banner-Content">
+        <div class="Banner-Box-Mid">
+          <h1>Bloomberg IT Meltdown Closes Trading</h1>
+          <p>Back in 2015, Bloomberg terminals were affected by an IT problem. The worst breakdown in over
+            a decade affected over 300,000 traders and forced the UK government to postpone a £3bn debt sale.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Manual vs Automated -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Manual vs Automated Testing</h2>
+        <div class="TM-Content">
+          <p>Testing can be either Manual or Automated and the choice selected is dependent on the individual requirements of the project.
+            Manual testing is a type of testing where a test is executed manually by the tester. Automated testing involves testers writing code,
+            scripts or frameworks to automate test execution.</p>
+        </div>
+      </div>
+    </section>
+    <article class="ManualvsAuto">
+      <div class="ManVsAuto-grid">
+        <section class="item-1">
+          <h3>Manual Testing</h3>
+          <p>Manual testing involves testers manually executing test cases and is often more tedious and time-consuming than Automated testing. Despite the benefits of Automated testing,
+            it is widely acknowledged that it is not possible to automate 100% of testing, thus Manual testing is crucial.</p>
+            <a href="Manual.html" class="Article-Link">Read More</a>
+        </section>
+        <img src="Images/ManvsAuto.jpg" class="item-2" alt="Graphical representation of Manual vs Automated testing">
+        <section class="item-3">
+          <h3>Automated Testing</h3>
+          <p>Automated testing requires some manual exertion by the tester to write scripts or frameworks. Without the need for human intervention, tests can be run unattended,
+            allowing for increased speed and test coverage. Automated testing is significantly faster than Manual testing. </p>
+            <a href="Automated.html" class="Article-Link">Read More</a>
+        </section>
+      </div>
+    </article>
+    <!-- Start of Testing Types Section -->
+    <article class="TestingTypes">
+      <h2>Popular Testing Types</h2>
+      <div class="TestingTypes-Container TestingTypes-grid">
+        <div>
+          <img src="Images/Icons/Integration.png" alt="Integration testing tests the integration of components to validate that they work as expected." title="Integration Testing">
+          <h3>Integration Testing</h3>
+          <p>Integration testing tests the integration of components to validate that they work as expected. </p>
+        </div>
+        <div>
+          <img src="Images/Icons/Unit.png" alt="Unit testing tests the individual components of a product to validate they perform as designed" title="Unit Testing">
+          <h3>Unit Testing</h3>
+          <p>Unit testing tests the individual components of a product to validate they perform as designed.</p>
+        </div>
+        <div>
+          <img src="Images/Icons/Regression.png" alt="Regression testing aims to ensure that changes to the code have not had a harmful effect." title="Regression Testing">
+          <h3>Regression Testing</h3>
+          <p>Regression testing aims to ensure that changes to the code have not had a harmful effect.</p>
+        </div>
+        <div>
+          <img src="Images/Icons/Load.png" alt="Load testing tests the behaviour of an application when accessed simultaneously by multiple users" title="Load Testing">
+          <h3>Load Testing</h3>
+          <p>Load testing tests the behaviour of an application when accessed simultaneously by multiple users.</p>
+        </div>
+        <div>
+          <img src="Images/Icons/Security.png" alt="Security testing aims to find all present security vulnerabilities in the productLink to Security Testing" title="Security Testing">
+          <h3>Security Testing</h3>
+          <p>Security testing aims to find all present security vulnerabilities in the product.</p>
+        </div>
+        <div>
+          <img src="Images/Icons/Performance.png" alt="Performance testing tests the performance of the product under the expected workload" title="Performance Testing">
+          <h3>Performance Testing</h3>
+          <p>Performance testing tests the performance of the product under the expected workload. </p>
+        </div>
+      </div>
+      <div class="topReturn">
+        <a href="#top">Return to the top</a> 
+      </div>
+    </article> 
+    <!-- Start of Footer -->
+    <footer>
+      <p>Michael Caunce &copy; 2019</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+    <a href="Sitemap.html">User Sitemap</a>
+  </body>
+</html>

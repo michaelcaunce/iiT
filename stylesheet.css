@@ -1,0 +1,897 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans|Poppins|Cabin+Sketch');
+
+/* 
+
+Styling specific to IE 
+CSS adjustments made to cater for IE users. The navigation wouldn't display and the banner needed adjusting when using IE.
+Section of the CSS moved here to a specific IE !important section of the CSS file.
+
+*/
+
+
+.nav-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Banner-Content h1 {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  font-size: 7vh;
+  text-align: center;
+  color: #FAB700;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+#Banner p {
+  text-align: center;
+  font-size: 1.7vh;
+}
+
+#Banner-Mid p, #Banner-Mid-2 p, #Banner-Mid-3 p {
+  padding: 10px 200px;
+  text-align: center;
+  font-size: 1.6vh;
+}
+
+/* 
+
+Start of a CSS @supports which lets specific declarations which are dependant on the browsers
+support. Known as a 'feature query', if the browser supports CSS grid, declare the stlye below. If the browser does
+not support CSS grid (IE), declare the the style above. 
+
+*/
+
+@supports (display: grid) {
+    
+    .nav-grid, .grid {
+       display: grid;
+       grid-template-columns: 1fr 5fr; 
+    }
+    
+    .Banner-Content h1 {
+       font-family: 'Poppins', sans-serif;
+       padding-bottom: 30px;
+       font-size: 7vh;
+       text-align: center;
+       color: #FAB700;
+       font-weight: 700;
+       line-height: 58px;
+    }
+    
+    #Banner p {
+       padding: 10px 50px;
+       text-align: center;
+       font-size: 2.5vh;
+    }
+    
+    #Banner-Mid p, #Banner-Mid-2 p, #Banner-Mid-3 p {
+      padding: 10px 200px;
+      text-align: center;
+      font-size: 2vh;
+    } 
+    
+    .Banner-Box-Mid h1, .Baner-Box-Mid-2 h1, .Banner-Box-Mid-3 h1 {
+      margin-top: -20px;
+    }
+}
+
+
+/* 
+
+Styling for added 'skip to content' link to facilitate keyboard users
+Upon using tab on a keyboard, the skip to main will appear allowing keyboard users
+to skip navigational links.
+*/
+
+.skip-main {
+  left:-999px;
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+  color: #000000;
+  background-color:#FAB700;
+  left: auto;
+  top: auto;
+  width: 20%;
+  height: auto;
+  overflow:auto;
+  margin: 10px 45%;
+  padding:5px;
+  border-radius: 15px;
+  border:4px solid #000000;
+  text-align:center;
+  font-size:1.2em;
+  font-family: 'Poppins', sans-serif;
+  z-index:999;
+}
+
+
+/* General HTML Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-size: 1.9vh;
+  font-weight: lighter;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  text-transform: capitalize;
+}
+
+/* Start of Grids Styling */
+
+.top-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 600px)) 1fr;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.bbvswb-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.ManVsAuto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+  "P img P2";
+  max-width: 1000px;
+}
+
+.TestingTypes-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.lower-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.lower-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+/* Start of Header and Navigation styling */
+
+header {
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  position: sticky;
+}
+
+nav {
+  align-items: center;
+  height: 120px;
+  overflow: hidden;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+nav img {
+  height: 130px;
+  width: auto;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  list-style: none;
+  z-index: 1;
+}
+
+.nav-links a {
+  color: #000000;
+  font-size: 2vh;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: -5px;
+  padding-right: 20px;
+}
+
+.nav-links a:hover {
+  color: #FAB700;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+nav label {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  z-index: 2;
+  margin-top: 35px;
+}
+
+nav label span {
+  display: block;
+  margin: 4px auto;
+  height: 6px;
+  width: 30px;
+  border-radius: 3px;
+  background-color: #FAB700;
+  transition: 0.5s;
+}
+
+/* Start of Navigation Transition */
+
+input[type=checkbox]:checked ~ .nav-links {
+  top: 0;
+}
+
+/* Change the colour of the label when the the navigation is open. */
+input[type=checkbox]:checked ~ label span {
+  background: #000000;
+}
+
+/* Banner Styling */
+
+.Banner-Content{
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Banner styling specific to the homepage */
+
+#Banner {
+  min-height: 60vh;
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)), url('../Images/Banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  z-index: -1;
+  padding: 0 1.5em;
+}
+
+/* Styling for Introduction and Importance of Testing section*/
+
+.Introduction h2 {
+  margin-bottom: 10px;
+  font-size: 5vh;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.Introduction p, .Testing-Methodologies p {
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+.Box {
+  padding: 2em;
+}
+
+.Box:nth-child(even) {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.Box:nth-child(odd) {
+  background-color: #FAB700;
+  color: #000000;
+}
+
+/* .Box-H2-Odd {
+  color: #FFFFFF;
+}
+
+.Box-H2-Even {
+  color: #000000;
+} */
+
+.Content-Wrapper {
+  grid-column: 2/4;
+}
+
+/* Start of Mid Banner Styling */
+
+.Banner-Box-Mid h1, .Baner-Box-Mid-2 h1, .Banner-Box-Mid-3 h1 {
+  padding-bottom: 10px;
+  font-size: 6vh;
+  text-align: center;
+  color: #FAB700;
+  font-weight: bold;
+}
+
+#Banner-Mid, #Banner-Mid-2, #Banner-Mid-3 {
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  z-index: -1;
+  padding: 0 1.5em;
+}
+
+#Banner-Mid {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)), url('../Images/BA.jpg');
+}
+
+#Banner-Mid-2 {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url('../Images/Starbucks.jpg');
+}
+
+#Banner-Mid-3 {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)), url('../Images/Bloomberg.jpg');
+}
+
+/* Comparison Styling */
+
+.Compare-h2 {
+  font-size: 5vh;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* Start of Testing Methodologies Section */
+
+.Testing-Methodologies{
+  padding: 2em 1.5em;
+}
+
+.Testing-Methodologies h2, .Testing-Methodologies-Banner h2 {
+  font-size: 4.5vh;
+  font-family: 'Cabin Sketch', cursive;
+
+}
+
+.Testing-Methodologies h1 {
+  font-size: 6vh;
+}
+
+.Testing-Methodologies p {
+  font-size: 2vh;
+  padding-top: 20px;
+}
+
+.Testing-Methodologies-Banner {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* Testing Links Section */
+
+.Testing-Types {
+  padding: 30px 0 20px;
+}
+
+.Testing-Types img {
+  height: 300px;
+  width: 100%;
+}
+
+.Testing-Types h1 {
+  color: #000000;
+  font-size: 6vh;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.Testing-Types h3 {
+  font-size: 3vh;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+.TestingTypes li  {
+  padding-bottom: 5px;
+  list-style-type: circle;
+  color: #FFFFFF;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.Testing-Cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.Testing-Card {
+  display: flex;
+  margin: 0 10px;
+  flex: 1 380px;
+}
+
+.Testing-Content {
+  width: auto;
+  margin: 20px auto;
+  padding: 8px 12px;
+	flex: 1 1 0;
+}
+
+/* Start of Articles Styling */
+
+.Articles-Box {
+  background-color: #fff;
+}
+
+.Articles-Box h2 {
+  text-align: center;
+  font-size: 7vh;
+  padding: 50px 0;
+}
+
+.Articles{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.Article-Odd :nth-child(odd) {
+  order: 2;
+}
+
+.Articles section {
+  padding: 25px 30px;
+  flex: 1.5;
+	height: auto;
+}
+
+.Articles p, .ManualvsAuto p, .BBvsWB-Container p {
+  font-size: 2vh;
+  padding-bottom: 30px;
+}
+
+.Article-Link {
+  background-color: #000000;
+  border-radius: 30px;
+  color: #FAB700;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.Article-Link:hover {
+  background-color: #FAB700;
+  color: #000000;
+}
+
+.Articles h3, .ManualvsAuto h3, .BBvsWB-Container h3, .Introduction h3 {
+  font-size: 4vh;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.Articles img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 400px;
+  flex: 1.5;
+}
+
+.topReturn {
+  color: #FFFFFF;
+  display: inherit;
+  text-align: center;
+}
+
+.topReturn:hover {
+  color: #FAB700;
+}
+
+.topReturnBlack {
+  color: #000000;
+  display: inherit;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topReturnBlack:hover {
+  color: #FAB700;
+}
+
+/* Start of Manual vs Automated Styling */
+
+.ManualvsAuto {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1.5em;
+}
+
+.item-1 {
+  grid-area: P;
+  flex: 1;
+}
+
+.item-2 {
+  grid-area: img;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+  flex: 1;
+}
+
+.item-3 {
+  grid-area: P2;
+  flex: 1;
+}
+
+/* Start of Testing Types Styling */
+
+.TestingTypes {
+  background-color: #000000;
+}
+
+.TestingTypes p, .TestingTypes h2 {
+  color: #FFFFFF;
+}
+
+.TestingTypes h2 {
+  text-align: center;
+  font-size: 5vh;
+  padding-top: 20px;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.TestingTypes-Container > div h3 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 3vh;
+}
+
+.TestingTypes-Container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.TestingTypes-Container h3 {
+  color: #FFFFFF;
+  margin: 15px 0;
+}
+
+.TestingTypes-Container img {
+  max-width: 300px;
+  max-height: 100px;
+  padding-top: 20px;
+}
+
+/* Start of Articles Styling */
+
+.BBvsWB-Container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.BBvsWB-Container section {
+  padding: 25px 30px;
+}
+
+.BBvsWB-Container img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/* Start of Footer Styling */
+
+footer {
+  padding: 2.2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);
+}
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+/* Start of Media Queries Styling */
+
+@media(max-width: 1180px) {
+
+  #Banner {
+    min-height: 70vh;
+  }
+
+  #Banner h1 {
+    font-size: 5vh;
+    padding-top: 10px;
+  }
+
+  .Banner-Box-Mid h1 {
+    padding-bottom: 10px;
+    font-size: 6vh;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #Banner-Mid, #Banner-Mid-2, #Banner-Mid-3 {
+    min-height: 40vh;
+  }
+
+  #Banner-Mid h1, #Banner-Mid-2 h1, #Banner-Mid-3 h1 {
+    font-size: 5vh;
+  }
+
+  #Banner-Mid p, #Banner-Mid-2 p, #Banner-Mid-3 p {
+    padding: 0 100px;
+  }
+
+  .Articles {
+    flex-direction: column;
+  }
+  .Articles section {
+    height: 300px;
+  }
+
+  .Article-Odd :nth-child(odd) {
+    order: 1;
+  }
+
+  .Article-Even :nth-child(odd) {
+    order: 2;
+  }
+
+  .Testing-Card {
+    display: flex;
+    margin: 0 10px;
+    flex: 1 400px;
+  }
+}
+
+@media(max-width: 980px) {
+
+  .top-grid {
+     display: grid;
+     grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #FAB700;
+  }
+
+  .nav-links a {
+    margin: 20px;
+    font-size: 1.5em;
+    color: #000000;
+  }
+
+  .nav-links a:first-child {
+    margin-top: -170px;
+  }
+
+  .nav-links a:hover {
+    color: #FFFFFF;
+  }
+
+  nav label {
+     display: block;
+   }
+
+   nav {
+     height: 100px;
+   }
+
+   nav img {
+     height: 120px;
+     margin-top: -10px;
+   }
+
+  #Banner {
+    min-height: 70vh;
+  }
+
+  #Banner-Mid, #Banner-Mid-2, #Banner-Mid-3 {
+    min-height: 30vh;
+  }
+
+  #Banner-Mid h1, #Banner-Mid-2 h1, #Banner-Mid-3 h1 {
+    font-size: 4vh;
+  }
+
+  #Banner-Mid p, #Banner-Mid-2 p, #Banner-Mid-3 p {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .Article-Link {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .ManVsAuto-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "P"
+    "img"
+    "P2";
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 600px) {
+
+  .top-grid {
+     display: grid;
+     grid-template-columns: 1fr;
+  }
+
+  .ManVsAuto-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "P"
+    "img"
+    "P2";
+    max-width: 100%;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #FAB700;
+  }
+
+  .nav-links a {
+    margin: 20px;
+    font-size: 1.5em;
+    color: #000000;
+  }
+
+  .nav-links a:first-child {
+    margin-top: -170px;
+  }
+
+  .nav-links a:hover {
+    color: #FFFFFF;
+  }
+
+  nav label {
+     display: block;
+   }
+
+  #Banner {
+    min-height: 50vh;
+  }
+
+  #Banner-Mid, #Banner-Mid-2, #Banner-Mid-3 {
+    min-height: 35vh;
+  }
+
+  #Banner-Mid h1, #Banner-Mid-2 h1, #Banner-Mid-3 h1 {
+    padding-top: 5px;
+    font-size: 3.5vh;
+  }
+
+  #Banner p {
+    font-size: 2vh;
+  }
+
+  #Banner-Mid p, #Banner-Mid-2 p, #Banner-Mid-3 p {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  #Banner h1 {
+    font-size: 5vh;
+    padding-top: 10px;
+  }
+
+  .Articles {
+    flex-direction: column;
+  }
+
+	.Articles img {
+		height:  300px;
+	}
+
+  .Articles section {
+    height: auto;
+  }
+
+  .Article-Link {
+    display: none;
+  }
+
+  .Article-Odd :nth-child(odd) {
+    order: 1;
+  }
+
+  .Article-Even :nth-child(odd) {
+    order: 2;
+  }
+}

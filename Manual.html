@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Manual Testing</title>
+    <meta charset="utf-8">
+    <meta name="description" content="iiT - Introduction into Testing - Voice Controlled Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Michael Caunce">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FAB700">
+    <link rel="stylesheet" href="stylesheet.css">
+      
+    <!-- [if IE]>
+      <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="speech-commands.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header>
+      <a class="skip-main" href="#Banner">Skip to main content</a>
+      <a id="top"></a>
+      <!-- Start of Navigation -->
+      <nav class="nav-grid">
+        <a href="index.html">
+        <img src="Images/Logo.jpg" alt="iiT logo, click to return to the homepage " title="Return Home"></a>
+        <input type="checkbox" id="Nav-Hide">
+        <label for="Nav-Hide">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Agile.html">Agile</a>
+          <a href="Waterfall.html">Waterfall</a>
+          <a href="Black-Box.html">Black-Box</a>
+          <a href="White-Box.html">White-Box</a>
+          <a href="Manual.html">Manual</a>
+          <a href="Automated.html">Automated</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Start of Banner -->
+    <section id="Banner" class="grid">
+      <div class="Banner-Content">
+          <h1>Manual Testing</h1>
+          <p>Manual testing involves testers manually executing test cases and is often more tedious and time-consuming than Automated testing. Despite the benefits of Automated testing,
+            it is widely acknowledged that it is not possible to automate 100% of testing, thus Manual testing is crucial.</p>
+      </div>
+    </section>
+    <!-- Start of Introduction and How To -->
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="top-grid">
+          <div class="Box">
+            <h2>Introduction</h2>
+            <p>In Manual testing, tests are undertaken manually by executing test cases with the aim being to find any bugs in the software. Fundamentally, Manual testing represents a human tester interacting with the
+              product just as a real ‘user’ would, highlighting any bugs and determining whether the product meets the requirements. </p>
+            <p>Despite technological advances which have seen the introduction and popularity of Automated testing rise, there is still the need for Manual testing. It is widely acknowledged that Automated testing cannot entirely erase the need for Manual testing and it will remain relevant and critical to software quality for the foreseeable future. Manual testing is imperative for complex scenarios which rely on human judgment and decision making. Yes, Automated testing adds value for repetitive tests, but Manual testing is required for tests which rely on human experiment and judgement.</p>
+          </div>
+          <div class="Box">
+            <h2>How To Perform Manual Testing</h2>
+            <p>The following steps represent a series of steps that must be undertaken to perform Manual testing.</p>
+            <ul>
+              <li><b>Understand The Requirements:</b> To be able to conduct Manual tests, you must first understand the requirements of the product</li>
+              <li><b>Test Cases:</b> Compile a series of test cases covering all of the requirements in the first stage</li>
+              <li><b>Conduct The Tests:</b> Once you have all your test cases written, testing can begin</li>
+              <li><b>Bug Reports:</b> It is the testers responsibility to log any bugs found during testing. Information relating to the bug should be documented clearly and explicitly. A well written report benefits both the tester and the developer</li>
+              <li><b>Repeat Failed Test Cases:</b> To ensure verification, failed test cases must be executed again</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Manual vs Automated -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Manual vs Automated</h2>
+        <div class="TM-Content">
+          <p>Any software testing type can be executed both manually and automated. In each testing type, a range of testing methods are available, methods which are covered on this site, such as Black-box testing, White-box testing,
+            Integration testing, System testing, Performance testing, and Load testing. Some methods are better suited to Manual, and others to Automated.</p>
+        </div>
+      </div>
+    </section>
+    <article class="TestingTypes">
+      <div class="TestingTypes-Container TestingTypes-grid">
+        <div>
+          <img src="Images/Icons/Manual.png" alt="Manual Testing icon" title="Manual Testing">
+          <h3>Manual</h3>
+          <ul>
+            <li>Manual testing requires human involvement</li>
+            <li>Manual testing can be labour intensive</li>
+            <li>Manual testing can imply high costs</li>
+            <li>Manual testing can be applied to any product</li>
+            <li>Manual testing can be considered to be not accurate due to potential human error</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Images/Icons/Automation.png" alt="Automated Testing icon" title="Automated Testing">
+          <h3>Automated</h3>
+          <ul>
+            <li>Automated uses tools to execute tests</li>
+            <li>Automated testing can save time</li>
+            <li>Automated testing can be cost effective</li>
+            <li>Automated testing is better suited in stable systems</li>
+            <li>Automated testing is more reliable</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <!-- Start of Manual Testing types -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Manual Testing Scenario</h2>
+        <div class="TM-Content">
+          <p>Manual testing is best suited to the following scenarios</p>
+        </div>
+      </div>
+    </section>
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="lower-grid-2">
+          <div class="Box">
+            <h3>Exploratory Testing</h3>
+            <p>Exploratory testing is an approach that accentuates the engagement of the tester by providing a certain level of freedom to discover, investigate and learn about the product being tested. Exploratory testing requires minimal planning with the direction of testing being dependant on the thought process of the tester. Testers choose where their focus lies and how they will evaluate the product. Such freedom allows testers to focus on specific areas they believe will be problematic. While other types of testing follow a predefined plan, Exploratory testing achieves results without following a predetermined route.</p>
+            <p>Think of Exploratory testing as a holistic approach to test design, execution, and analysis. All of you have or will, consciously or subconsciously performed exploratory testing at some point during your course. </p>
+          </div>
+          <div class="Box">
+            <h3>Usability Testing</h3>
+            <p>Usability testing is an area that you have or will cover in greater detail on your course which is why it is only briefly covered here. In summary, Usability testing is used to evaluate specific products user experience. By gaining insight from the products users, problems can be fixed by identifying them early, user satisfaction can be improved, and the product can be made efficient and effective.</p>
+          </div>
+          <div class="Box">
+            <h3>Ad-hoc Testing</h3>
+            <p>Ad-hoc testing is not reliant on test cases at all. Ad-hoc testing is a random act of testing and with the aim being to find defects by its random approach. Like the typical Black-box technique, Error Guessing, Ad-hoc testing calls on the experience of testers to ‘guess’ where errors may occur.</p>
+            <p>Due to its random approach, Ad-hoc testing requires no documentation, no planning or any process to be followed; however, such an approach can cause testing issues. Defects cannot be linked to test cases (because there are not any) which can make it difficult to reproduce the defects as there are no steps or requirements associated with the defect.</p>
+          </div>
+        </div>
+      </div>
+      <div class="topReturnBlack">
+        <a href="#top">Return to the top</a> 
+      </div>
+    </section>
+    <!-- Start of Footer -->
+    <footer>
+      <p>Michael Caunce &copy; 2019</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+    <a href="Sitemap.html">User Sitemap</a>
+  </body>
+</html>

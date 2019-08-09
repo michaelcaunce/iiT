@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Agile Testing Methodology</title>
+    <meta charset="utf-8">
+    <meta name="description" content="iiT - Introduction into Testing - Voice Controlled Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Michael Caunce">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FAB700">
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <!-- If statement linking IE 6-9 to a seperate CSS file stripping back all CSS -->  
+      
+    <!-- [if IE]>
+      <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="speech-commands.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header>
+      <a class="skip-main" href="#Banner">Skip to main content</a>
+      <a id="top"></a>
+      <!-- Start of Navigation -->
+      <nav class="nav-grid">
+        <a href="index.html">
+        <img src="Images/Logo.jpg" alt="iiT logo, click to return to the homepage " title="Return Home"></a>
+        <input type="checkbox" id="Nav-Hide">
+        <label for="Nav-Hide">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Agile.html">Agile</a>
+          <a href="Waterfall.html">Waterfall</a>
+          <a href="Black-Box.html">Black-Box</a>
+          <a href="White-Box.html">White-Box</a>
+          <a href="Manual.html">Manual</a>
+          <a href="Automated.html">Automated</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Start of Banner -->
+    <section id="Banner" class= "grid">
+      <div class="Banner-Content">
+          <h1>Agile Methodology</h1>
+          <p>Agile is an iterative, team-based approach emphasising rapid delivery of the entire functional components of a product.
+            Agile testing differs from the Waterfall method as testing can begin at the start of the life cycle, with integration between
+            development and testing. Ultimately, Agile testing is not sequential, but continuous.</p>
+      </div>
+    </section>
+    <!-- Start of Introduction -->
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="top-grid">
+          <div class="Box">
+            <h2>Introduction</h2>
+            <p>Agile testing is considered to be a modern approach, with an emphasis on testing smarter. A high level of communication and
+              collaboration is required in Agile testing, with the integration between tester and developer dependant on positive feedback
+              during the development cycle.</p>
+              <p>The principles of the traditional Agile development model transfer to Agile testing, conforming with an
+              iterative development methodology in which requirements develop progressively from both customers and testing teams. The big difference between Agile testing and
+              the Waterfall model is that Agile testing is continuous, with testing starting at the beginning of the project. Integration remains constant between testing teams
+              and development teams throughout the lifecycle of the project.</p>
+          </div>
+          <div class="Box">
+            <h2>Principles of Agile</h2>
+            <p>Agile testing relies on being collaborative, flexible and adaptive, and contains four requirements to suit the fast pace of Agile: Prioritising, automated testing, exploratory testing, and adaption.</p>
+            <ul>
+              <li>Prioritising requirements is essential as there is a theory that everything cannot be tested. Requirements are prioritised based on risk.</li>
+              <li>Using automated testing increases test efficiency. </li>
+              <li>The use of exploratory testing accelerates the time between delivery of code to test completion.</li>
+              <li>There needs to be an adaption to changes from sprints. </li>
+            </ul>
+            <p>Each of the principles and requirements forms what the fast pace of Agile testing, a methodology which is quite dissimilar to the Waterfall model.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Agile -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Agile Methodologies</h2>
+        <div class="TM-Content">
+          <p>Every project is unique, and the Agile methodology selected is dependent on varying internal and external factors. To aid the needs of different projects, there are various Agile methodologies and testing
+            types which can be used when working within one of the selected methodologies. Two of the most popular Agile methodologies are Scrum and Kanban.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Agile Methodologies -->
+    <article class="Articles articles-grid Article-Odd">
+      <img src="Images/Scrum.jpeg" alt="Graphical representation of the Scrum methodology">
+      <section>
+        <h3>Scrum</h3>
+        <p>Scrum begins its lifecycle with a set of requirements or a user story, detailing how features should perform and how each should be tested. Scrum focusses on defining key features and
+          objectives before each sprint. This iterative approach allows for a series of sprints to be worked through, providing small amounts of value, quickly and efficiently.</p>
+      </section>
+    </article>
+    <article class="Articles articles-grid Article-Even">
+      <img src="Images/Kanban.jpeg" alt="Graphical representation of the Kanban methodology">
+      <section>
+        <h3>Kanban</h3>
+        <p>Kanban is considered to be a simple methodology resembling a large scale 'to-do-list'. Similar to Scrum, requirements are tracked in their process by moving them along a Kanban board, stages such as to-do, developing, testing, complete.
+        Unlike Scrum, Kanban is based on priority, not time. Once a task is complete, the task is moved along the Kanban board, this, however, can cause problems if one team works faster than another. In this instance, bottlenecks will appear, and at that point, all team members should combine to help.
+        </p>
+      </section>
+    </article>
+    <!-- Start of Four Agile Testing types -->
+    <section class="Testing-Methodologies-Banner content-grid">
+      <div class="Content-Wrapper">
+        <h2>Four Agile Testing Methods</h2>
+      </div>
+    </section>
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="lower-grid">
+          <div class="Box">
+            <h3>BDD</h3>
+            <p>Behaviour Driven Development is an area that you will cover in greater detail on your module, but it’s important for you to understand that it is an Agile testing method. Based on the same principles and
+              TDD (Test Driven Design) yet consists of higher-level tests. Requirements are based on the end users behaviour to a product, and product behaviours can replace requirement documentation.
+              Essentially, BDD drives a high level of efficiency through automated testing.</p>
+          </div>
+          <div class="Box">
+            <h3>ATDD</h3>
+            <p>Acceptance Test Driven Development is similar to BDD where tests are created first with code to be written in order to pass those tests. ATDD positions user perception of the product and functionality as equals.
+              To achieve this, ATDD requires input from customers which can be used to develop manual or automated acceptance tests. Fundamentally, ATDD involves direct contact with the customer to understand how the product will be used.</p>
+          </div>
+          <div class="Box">
+            <h3>Exploratory</h3>
+            <p>Exploratory testing is a type of functional testing which allows testers to test the code in a way that can be considered as controlled chaos. Testers do not follow a predefined plan, and their aim is interacting with the product in
+              an attempt to try and break it. Due to its unscripted nature, Exploratory testing often impersonates how users will interact with the product. Exploratory testing is a method that you will be able to incorporate into your coursework.</p>
+          </div>
+          <div class="Box">
+            <h3>Session Based</h3>
+            <p>Session-based testing adds more structure and builds on Exploratory testing by aiming to add more structure, without compromising the benefits that exploratory testing provides. The structure is provided by conducting tests during pre-planned,
+              consecutive sessions. Testers are required to report back the completed testing from each session. After each session, testers debrief with five ‘proof’ points: Past (what happened?), Results (what was achieved?), Obstacles (what got in the way?),
+              Outlook (what still needs to be done?), and Feelings (how does the tester feel about it?).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Agile vs Waterfall -->
+    <article class="TestingTypes">
+      <h2>Agile vs Waterfall</h2>
+      <div class="TestingTypes-Container TestingTypes-grid">
+        <div>
+          <img src="Images/Icons/Agile-icon.png" alt="Agile Methodology icon" title="Agile Methodology">
+          <h3>Agile</h3>
+          <ul>
+            <li>Agile testing is generally unstructured</li>
+            <li>Suited for small projects</li>
+            <li>Defects can be fixed during the project lifecycle</li>
+            <li>Less documentation</li>
+            <li>Each iteration has a dedicated testing phase. Regression tests can be run based on the integration of new functions</li>
+            <li>Testers and developers work closely together</li>
+            <li>User acceptance is undertaken after each sprint</li>
+            <li>Testers and developers communicate plan and analyse requirements</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Images/Icons/Waterfall-icon.png" alt="Waterfall Model icon" title="The Waterfall Model">
+          <h3>Waterfall</h3>
+          <ul>
+            <li>The testing process is more structured</li>
+            <li>Waterfall is suitable for a variety of projects</li>
+            <li>Testing only occurs at the end of development, the process repeats for any changes</li>
+            <li>Requires intricate documentation</li>
+            <li>Testing only begins after the development phase</li>
+            <li>Testers and developers work separately</li>
+            <li>User acceptance can only commence at the end of the project</li>
+            <li>Minimal communication between testers and developers. Developers are not involved in planning or requirement analysis</li>
+          </ul>
+        </div>
+      </div>
+      <div class="topReturn">
+        <a href="#top">Return to the top</a> 
+      </div>    
+    </article>
+    <!-- Start of Footer -->
+    <footer>
+      <p>Michael Caunce &copy; 2019</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+    <a href="Sitemap.html">User Sitemap</a>
+  </body>
+</html>

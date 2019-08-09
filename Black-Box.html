@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Black-Box Testing</title>
+    <meta charset="utf-8">
+    <meta name="description" content="iiT - Introduction into Testing - Voice Controlled Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Michael Caunce">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FAB700">
+    <link rel="stylesheet" href="stylesheet.css">
+      
+    <!-- If statement linking IE 6-9 to a seperate CSS file stripping back all CSS -->  
+      
+    <!-- [if IE]>
+      <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+      
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="speech-commands.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header>
+      <a class="skip-main" href="#Banner">Skip to main content</a>
+      <a id="top"></a>
+      <!-- Start of Navigation -->
+      <nav class="nav-grid">
+        <a href="index.html">
+        <img src="Images/Logo.jpg" alt="iiT logo, click to return to the homepage " title="Return Home"></a>
+        <input type="checkbox" id="Nav-Hide">
+        <label for="Nav-Hide">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Agile.html">Agile</a>
+          <a href="Waterfall.html">Waterfall</a>
+          <a href="Black-Box.html">Black-Box</a>
+          <a href="White-Box.html">White-Box</a>
+          <a href="Manual.html">Manual</a>
+          <a href="Automated.html">Automated</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Start of Banner -->
+    <section id="Banner" class= "grid">
+      <div class="Banner-Content">
+          <h1>Black-Box Testing</h1>
+          <p>The term ‘Black-box’ derives from the software tester being unaware of the internal structure of the product, thus seeing it as a ‘Black-box’. In Black-box testing, the emphasis is on input and output of the product,
+            with little to no internal knowledge.</p>
+      </div>
+    </section>
+    <!-- Start of Introduction -->
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="top-grid">
+          <div class="Box">
+            <h2>Introduction</h2>
+            <p>There are two primary types of QA (quality assurance) testing, White-box testing and Black-box testing. Black-box testing differs from White-box testing due to testers having no knowledge relating to the internals of the product. Black-box testing is based on software requirements and specifications, rather than looking at the internal code structure. Testers use their knowledge of the requirements to create test cases.</p>
+            <p>Testers enter data into the product, then compare the output against the expected results, an input-output approach. The tester is not concerned about how the product handles the data; instead, the tester focusses on the behaviour of the functionality. The tester tests functionality behaviour, which is why Black-box testing is known as a type of functional testing. Black-box testing can, however, be non-functional if performance is being tested. Instead of testing the behaviour, a performance test would test the response times for the input and output.</p>
+          </div>
+          <div class="Box">
+            <h2>Black-Box Testing Life Cycle </h2>
+            <p>Just as developers follow the Software Development Life Cycle (SDLC), testers follow the Software Testing Life Cycle (STLC). Black-box testing is relative to every stage of STLC and is the sequence of activities carried out by the testing team from the beginning of the project until the end of the project.</p>
+            <ul>
+              <li><b>Requirements:</b> Requirements are gathered with the inclusion of testers</li>
+              <li><b>Test Planning &amp; Analysis:</b> Testing types are determined on the suitability of the project. A detailed test plan is created outlining potential risks</li>
+              <li><b>Design:</b> Test cases and scripts are created using the input of the software requirements</li>
+              <li><b>Test Execution:</b> Test cases are prepared and executed. Any defects are rectified and re-tested</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Agile -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Functional vs Non-Functional</h2>
+        <div class="TM-Content">
+          <p>There are many types of Black-box testing but the two you may have heard of are, Functional and Non-Functional. We have touched on these previously, but it is essential to provide you with an introduction to each.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Agile Methodologies -->
+    <article class="Articles articles-grid Article-Odd">
+      <img src="Images/Functional.jpg" alt="Graphical representation of the Functional testing">
+      <section>
+        <h3>Functional</h3>
+        <p>Functional testing verifies the functionality of a product, with the aim being to test whether each function conforms with the requirements. As previously mentioned, this is the most common type of Black-box testing due to not being concerned with the internal code of the product. Functional testing can be done manually, or automated. Examples of Functional testing could be: Unit testing, User Acceptance, Integration Testing, or Regression testing. </p>
+      </section>
+    </article>
+    <article class="Articles articles-grid Article-Even">
+      <img src="Images/Non-Functional.jpg" alt="Graphical representation of Non-Functional testing">
+      <section>
+        <h3>Non-Functional</h3>
+        <p>Non-functional testing can test performance, usability or reliability with the focus being to test all ‘non-functional’ aspects. Importantly, Non-functional testing can improve the usability and the efficiency of the product. Typically, Non-functional testing verifies the behaviour of the product, asking the question, does it meet the requirements or not? There are several Non-functional testing types, far too many to cover, but the more familiar types are Performance Testing, Usability Testing, Load Testing, and Security Testing.</p>
+      </section>
+    </article>
+    <!-- Start of Four Agile Testing types -->
+    <section class="Testing-Methodologies-Banner content-grid">
+      <div class="Content-Wrapper">
+        <h2>Four Types of Black-Box Testing Techniques</h2>
+      </div>
+    </section>
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="lower-grid">
+          <div class="Box">
+            <h3>Equivalence Partitioning</h3>
+            <p>Equivalence partitioning aims to find faults by dividing inputs into classes, and these are then used to create test cases. With this technique, there is an assumption that the performance of program inputs will resemble equivalent inputs, meaning that if a defect is found in one class, the same defect will be found in other classes.</p>
+          </div>
+          <div class="Box">
+            <h3>Boundary Value Analysis</h3>
+            <p>Boundary value analysis tests the boundaries between the equivalence partitions, complementing Equivalence Partitioning. Boundary value analysis has the principle that, if a product works well for specific values, then it will work well for all values between boundary values. </p>
+          </div>
+          <div class="Box">
+            <h3>Decision Table Testing</h3>
+            <p>A technique adopted for more complex scenarios, Decision table testing, is used to examine specific function combinations where the input presents a different output. Conditions are often stated as Boolean to identify combinations that may not have been anticipated. A table containing all combinations of input and outputs must be created for every function, ensuring that no function is overlooked.</p>
+          </div>
+          <div class="Box">
+            <h3>Error Guessing Testing</h3>
+            <p>Error guessing relies on the experience of testers to use their experience, knowledge and intuition to ‘guess’ where errors may occur. The tester aims to identify high-risk code by ‘guessing’ the problematic part of the product.</p>
+          </div>
+        </div>
+      </div>
+      <div class="topReturnBlack">
+        <a href="#top">Return to the top</a> 
+      </div>
+    </section>
+    <!-- Start of Footer -->
+    <footer>
+      <p>Michael Caunce &copy; 2019</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+    <a href="Sitemap.html">User Sitemap</a>
+  </body>
+</html>

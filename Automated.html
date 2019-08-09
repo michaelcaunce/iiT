@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Automated Testing</title>
+    <meta charset="utf-8">
+    <meta name="description" content="iiT - Introduction into Testing - Voice Controlled Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Michael Caunce">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FAB700">
+    <link rel="stylesheet" href="stylesheet.css">
+      
+    <!-- If statement linking IE 6-9 to a seperate CSS file stripping back all CSS -->  
+      
+    <!-- [if IE]>
+      <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+      
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="speech-commands.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header>
+      <a class="skip-main" href="#Banner">Skip to main content</a>
+      <a id="top"></a>
+      <!-- Start of Navigation -->
+      <nav class="nav-grid">
+        <a href="index.html">
+        <img src="Images/Logo.jpg" alt="iiT logo, click to return to the homepage " title="Return Home"></a>
+        <input type="checkbox" id="Nav-Hide">
+        <label for="Nav-Hide">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Agile.html">Agile</a>
+          <a href="Waterfall.html">Waterfall</a>
+          <a href="Black-Box.html">Black-Box</a>
+          <a href="White-Box.html">White-Box</a>
+          <a href="Manual.html">Manual</a>
+          <a href="Automated.html">Automated</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Start of Banner -->
+    <section id="Banner" class="grid">
+      <div class="Banner-Content">
+          <h1>Automated Testing</h1>
+          <p>Automated testing requires some manual exertion by the tester to write code, scripts or frameworks. Without the need for human intervention, tests can be run unattended,
+            allowing for increased speed and test coverage.</p>
+      </div>
+    </section>
+    <!-- Start of Introduction and How To -->
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="top-grid">
+          <div class="Box">
+            <h2>Introduction</h2>
+            <p>In Automated testing, testers are required to write test scripts and frameworks to automate test execution. Specific tools are used dependant on the project.
+              Automated testing relies on the testers pre-scripted test to compare real results against the expected results. By comparing results, the tester can determine whether the product performs as expected. </p>
+            <p>A key benefit of Automated testing is that it allows you to execute repetitive tasks, such as Regression tests, without the need for human intervention. Even though all processes are performed automatically, automation requires
+              some manual effort to create initial testing scripts. Automated tests are executed with the help of tools, scripts, frameworks, and software to perform the pre-defined actions written in the test cases. An Automated tester must possess strong programming knowledge with the most common languages being Java, C#, C++, and Python.</p>
+          </div>
+          <div class="Box">
+            <h2>Automated Testing Process</h2>
+            <p>The following steps represent a series of steps that must be undertaken to perform Automated testing.</p>
+            <ul>
+              <li><b>Test Tool Selection:</b> This very much depends on the technology used to build the product. Not all testing tools support each technology</li>
+              <li><b>Define the Scope:</b> Which area of the product under test will be Automated?</li>
+              <li><b>Planning and Development:</b> Create an Automation strategy containing all the selected tools, the framework design, schedule, timeline, deliverables, and test execution</li>
+              <li><b>Test Execution:</b> Compiled Automation scripts are executed. The test can be executed using the Automation tool or through a test management tool</li>
+              <li><b>Maintenance:</b> As the product under test continues to add new functionalities, additional scripts need to be added, reviewed and maintained. Active maintenance can improve the effectiveness of Automated Scripts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Manual vs Automated -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Manual vs Automated</h2>
+        <div class="TM-Content">
+          <p>Any software testing type can be executed both manually and automated. In each testing type, a range of testing methods are available, methods which are covered on this site, such as Black-box testing, White-box testing,
+            Integration testing, System testing, Performance testing, and Load testing. Some methods are better suited to Manual, and others to Automated.</p>
+        </div>
+      </div>
+    </section>
+    <article class="TestingTypes">
+      <div class="TestingTypes-Container TestingTypes-grid">
+        <div>
+          <img src="Images/Icons/Manual.png" alt="Manual Testing icon" title="Manual Testing">
+          <h3>Manual</h3>
+          <ul>
+            <li>Manual testing requires human involvement</li>
+            <li>Manual testing can be labour intensive</li>
+            <li>Manual testing can imply high costs</li>
+            <li>Manual testing can be applied to any product</li>
+            <li>Manual testing can be considered to be not accurate due to potential human error</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Images/Icons/Automation.png" alt="Automated Testing icon" title="Automated Testing">
+          <h3>Automated</h3>
+          <ul>
+            <li>Automated uses tools to execute tests</li>
+            <li>Automated testing can save time</li>
+            <li>Automated testing can be cost effective</li>
+            <li>Automated testing is better suited in stable systems</li>
+            <li>Automated testing is more reliable</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <!-- Start of Automated Testing types -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>Automated Testing Scenario</h2>
+        <div class="TM-Content">
+          <p>Automated testing is best suited to the following scenarios</p>
+        </div>
+      </div>
+    </section>
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="lower-grid-2">
+          <div class="Box">
+            <h3>Regression Testing</h3>
+            <p>Automated testing is suitable if a product has frequent code changes. Frequent changes to the code requires frequent testing.
+              Regression testing ensures that any changes to the code or addition of code do not affect existing functionalities.</p>
+          </div>
+          <div class="Box">
+            <h3>Load Testing</h3>
+            <p>Load testing tests the behaviour of an application when accessed simultaneously by multiple users, and Automated testing is preferred to help determine a system’s performance under real-life load conditions.</p>
+          </div>
+          <div class="Box">
+            <h3>Performance Testing</h3>
+            <p>Automated testing is preferred for Performance testing due to the aim being to eliminate bottlenecks, requiring Automation to represent high numbers of concurrent users. Performance testing tests for speed, scalability, and stability of the product.</p>
+          </div>
+        </div>
+      </div>
+      <div class="topReturnBlack">
+        <a href="#top">Return to the top</a> 
+      </div>
+    </section>
+    <!-- Start of Footer -->
+    <footer>
+      <p>Michael Caunce &copy; 2019</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+    <a href="Sitemap.html">User Sitemap</a>
+  </body>
+</html>

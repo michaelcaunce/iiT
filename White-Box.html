@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>White-Box Testing</title>
+    <meta charset="utf-8">
+    <meta name="description" content="iiT - Introduction into Testing - Voice Controlled Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Michael Caunce">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FAB700">
+    <link rel="stylesheet" href="stylesheet.css">
+      
+    <!-- If statement linking IE 6-9 to a seperate CSS file stripping back all CSS -->  
+      
+    <!-- [if IE]>
+      <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+       
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js" defer></script>
+    <script src="speech-commands.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <header>
+      <a class="skip-main" href="#Banner">Skip to main content</a>
+      <a id="top"></a>
+      <!-- Start of Navigation -->
+      <nav class="nav-grid">
+        <a href="index.html">
+        <img src="Images/Logo.jpg" alt="iiT logo, click to return to the homepage " title="Return Home"></a>
+        <input type="checkbox" id="Nav-Hide">
+        <label for="Nav-Hide">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Agile.html">Agile</a>
+          <a href="Waterfall.html">Waterfall</a>
+          <a href="Black-Box.html">Black-Box</a>
+          <a href="White-Box.html">White-Box</a>
+          <a href="Manual.html">Manual</a>
+          <a href="Automated.html">Automated</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Start of Banner -->
+    <section id="Banner" class= "grid">
+      <div class="Banner-Content">
+          <h1>White-Box Testing</h1>
+          <p>White-box testing aims to find possible errors in the code of the product to see how it performs. Thus, testing can only instigate when the product is ready. Due to the necessity of technical knowledge, white-box testing is undertaken
+          by software developers or testing experts.</p>
+      </div>
+    </section>
+    <!-- Start of Introduction -->
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="top-grid">
+          <div class="Box">
+            <h2>Introduction</h2>
+            <p>White-box testing can also be referred to as Clear-box, Open-box or Glass-box testing, and differs from Black-box as the emphasis is on the internal structure, design, and all aspects of the code. The focus is mainly on the flow of inputs and
+              outputs through the product, allowing for improvements in usability and security. Importantly, White-box testing revolves around the internals of the product.</p>
+              <p>The name White-box derives from the see-through box concept, symbolising the ability to see the internal functionalities of the product. During the process, the tester chooses inputs to exercise paths through the code, determining the appropriate outputs.
+                Crucially, a strong knowledge of programming is required due to the complexity of the products internal applications.
+              White-box testing offers a fast way to test every path and does not require a complete user interface to execute tests. While this ensures the code is working well, it cannot guarantee it works as the user intends, which is why we also need Black-box testing.</p>
+          </div>
+          <div class="Box">
+            <h2>White-box Testing Involves…</h2>
+            <p>The primary objective of white box testing is to verify the quality of the application code. For this reason, the tester needs to have a deep understanding of the expected outcomes. Through the process, White-box testing identifies: <p>
+            <ul>
+              <li>Security issues within the product</li>
+              <li>Broken paths within the code</li>
+              <li>The input flow relating to specific sections of the code</li>
+              <li>The expected output</li>
+              <li>How the functionality works with conditional loops</li>
+              <li>Ensuring that every statement, object and function is tested</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start of Pros vs Cons -->
+    <article class="TestingTypes">
+      <h2>Pros vs Cons</h2>
+      <div class="TestingTypes-Container TestingTypes-grid">
+        <div>
+          <img src="Images/Icons/Pros.png" alt="Pros icon">
+          <h3>Pros</h3>
+          <ul>
+            <li>Testing is thorough with complete code coverage</li>
+            <li>White-box testing gives a clear structure to testing with clearly defined rules</li>
+            <li>Knowledge of the products internal system allows for small pieces of code to be tested to see if they run as they should,
+              a process known as ‘Unit Testing’. Due to their quick nature, unit tests can be automated</li>
+            <li>White-box testing can significantly speed up the testing process</li>
+            <li>The Code can be optimised during the process</li>
+          </ul>
+        </div>
+        <div>
+          <img src="Images/Icons/Cons.png" alt="Cons icon">
+          <h3>Cons</h3>
+          <ul>
+            <li>Due to the precise nature, White-box testing is costly</li>
+            <li>Testing is often more time consuming and complex</li>
+            <li>Automated tests can be neglected if there are continuous changes is in the code
+            <li>Testers are required to possess internal knowledge</li>
+            <li>Despite its thoroughness, there is still the possibility that sections of code are accidentally missed</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <!-- Start of White-box Techniques -->
+    <section class="Testing-Methodologies content-grid">
+      <div class="Content-Wrapper">
+        <h2>White-box Techniques</h2>
+        <div class="TM-Content">
+          <p>There are several White-box testing techniques, far more than the scope of this website. Code coverage measures the degree of how source code has been tested. Some of the basic techniques are: </p>
+        </div>
+      </div>
+    </section>
+    <section class="Introduction">
+      <div class="Content-Wrapper">
+        <div class="lower-grid-2">
+          <div class="Box">
+            <h3>Statement Coverage</h3>
+            <p>Every statement within the code is required to be tested at least once during the testing process. It is used to measure the number of statements in the code which can be executed against the given the requirements. Statement coverage typically covers unused statements, unused branches and dead code.</p>
+          </div>
+          <div class="Box">
+            <h3>Path Coverage</h3>
+            <p>With Path Coverage, the program is split into a series of distinct paths, providing a structured testing method to identify every possible executable path. One of the benefits is that it helps to find all defects within a specific piece of code while determining all lying faults.</p>
+          </div>
+          <div class="Box">
+            <h3>Branch Coverage</h3>
+            <p>Branch Coverage is perhaps the most comprehensive coverage as every outcome from the code is tested. Sections of code which do not contain branches can be identified, and fractions of code segments can be measured. </p>
+          </div>
+        </div>
+      </div>
+      <div class="topReturnBlack">
+        <a href="#top">Return to the top</a> 
+      </div>
+    </section>
+    <!-- Start of Footer -->
+    <footer>
+      <p>Michael Caunce &copy; 2019</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+    <a href="Sitemap.html">User Sitemap</a>
+  </body>
+</html>
